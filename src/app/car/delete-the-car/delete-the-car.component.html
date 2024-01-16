@@ -1,0 +1,10 @@
+<p>delete-the-car works!</p>
+<table border="5" [cellPadding]="10" [cellSpacing]="2">
+    <tr>enter the car no to see the details</tr>
+    <tr><input type="number" [(ngModel)]="carToDelete"></tr>
+   
+     <tr>
+         <button (click)="localView()">delete car</button>
+     </tr>
+ </table>
+ <table> 

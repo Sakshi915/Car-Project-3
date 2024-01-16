@@ -1,0 +1,26 @@
+<p>see-the-single-car works!</p>
+<div>
+    <table border="5" [cellPadding]="10" [cellSpacing]="2">
+       <tr>enter the car no to see the details</tr>
+       <tr><input type="number" [(ngModel)]="carToSee"></tr>
+      
+        <tr>
+            <button (click)="localView()">see car</button>
+        </tr>
+    </table>
+    <table>
+        <!-- <tr>cno</tr>
+        <tr>cname</tr>
+        <tr>cprice</tr> -->
+        <tr>
+            <td>cno</td>
+            <td>cname</td>
+            <td>cprice</td>
+        </tr>
+        <tr *ngIf="carObj!=undefined">
+              <td>{{carObj.cNo}}</td>
+              <td>{{carObj.cName}}</td>
+              <td>{{carObj.cPrice}}</td>
+        </tr>
+    </table>
+</div>
